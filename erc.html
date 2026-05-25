@@ -1,7 +1,11 @@
----
+Web3(Web3.HTTPProvider(RPC))---
 layout: page
 title: ERC
----
+---nonce = w3.eth.get_transaction_count(deployer.address)
+TokenB = w3.eth.contract(
+ abi=tokenB_data["abi"],
+ bytecode=tokenB_data["bytecode"]
+)
 
 {% assign eips=site.pages|where:"type","Standards Track"|where:"category","ERC" %}
-{% include eiptable.html eips=eips %}
+{% include eiptable.html eips=eips %}000000000000
